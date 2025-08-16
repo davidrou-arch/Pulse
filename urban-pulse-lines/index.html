@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Pulse — Animated Grid (US)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Urban Pulse — Animated Grid</div>
+    <div class="controls">
+      <button id="resetBtn">Reset View</button>
+      <span class="hint">Lines fade in with transparent→neon turquoise gradient, flashing in sequence.</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <div id="map"></div>
+    <aside class="panel">
+      <h2>About this view</h2>
+      <p>Static US map with a looser, animated grid. Lines fade in from transparent to neon turquoise and flash in a left-to-right / top-to-bottom sequence.</p>
+      <p>Click a cell to see its bounds (optional for now; main focus is the line animation).</p>
+      <div id="cellInfo" class="muted">No cell selected.</div>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="lines.js"></script>
+</body>
+</html>
